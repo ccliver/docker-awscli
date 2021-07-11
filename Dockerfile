@@ -15,6 +15,6 @@ RUN yum -y install "Development Tools" \
   python3-pip \
   && yum -y clean all && rm -rf /var/cache
 
-RUN pip3 install awsebcli
+RUN pip3 install --no-cache-dir awsebcli
 
 WORKDIR /root
